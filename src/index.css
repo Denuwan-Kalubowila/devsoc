@@ -35,6 +35,32 @@
     margin-bottom: 20px;
   }
 }
+.button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+.gradient-text {
+  background-image: linear-gradient(to right, #FF8C00, #FFD700);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.box-shadow {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.section-separator {
+  position: relative;
+}
+
+.section-separator::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  margin: 10px 0;
+}
+.image-filter:hover {
+  filter: grayscale(100%);
+}
 
 @tailwind base;
 @tailwind components;
